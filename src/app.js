@@ -170,7 +170,7 @@ io.on('connection', (socket) => {
 
 
 //Listening port 3000 for this app
-server.listen(3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log('listening on *:3000');
   }); 
   
