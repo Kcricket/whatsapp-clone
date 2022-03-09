@@ -115,7 +115,11 @@ window.onload = () => {
     }
 //-----------------------------------------------------------------
     //----------------------- ONSUBMIT FILE UPLOAD----------------------------------------------------
-    $("#btnSendF").on("click", function(){
+   $("#btnSendF").on("click", function(){
+    document.getElementById("fileSend").click();
+   })
+   
+    $("#fileSend").on("input", function(){
        var file = $('.input-img');
         //SAved data:
         var formData = new FormData();
@@ -144,7 +148,8 @@ window.onload = () => {
             .append(nuevo);
 
             //socket.emit('chatimg',archivo)
-            //file.val("")
+            //
+            file.val("")
       
         })
         .fail(function (jqXHR, textStatus, errorThrown) {
