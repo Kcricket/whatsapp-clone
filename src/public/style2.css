@@ -1,0 +1,114 @@
+body{
+    background-color: aqua;
+}
+
+.container{
+    background-color: yellow;
+    display: flex;
+    padding: 10px;
+}
+/* ///////////////// ASIDE //////////// */
+.container-aside{
+    background-color: red;
+    width: 30%;
+}
+/* ------------- */
+.container-aside-user{
+    display: flex;
+    border-bottom: 10px groove rgba(28,110,164,0.35);
+    margin: 10px;
+
+}
+.container-aside-user > img{
+    border-radius: 50%;
+    max-width: 40%;
+
+    padding: 10px;
+}
+.container-aside-user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ----------------- */
+.container-aside-user-his{
+    display: flex;
+    background-color: palevioletred;
+
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.75); 
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.75);
+
+    margin: 10px;
+    padding: 10px;
+
+}
+.container-aside-user-his > img{
+    border-radius: 50%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.container-aside-user-info{
+    /* display: grid; */
+}
+/* ----------------------- XAT ------------------- */
+.container-chat{
+    background-color: green;
+    width: 70%;
+}
+.container-chat-message{
+    background-color:greenyellow;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+.container-chat-message-text{
+    background-color:greenyellow;
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+}
+.chat-message-text-mine{
+    background-color: #00ffff;
+    width: max-content;
+
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+
+}
+.span-name{
+    font-size: smaller;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.chat-message-text-his{
+    background-color: salmon;
+    width: max-content;
+    align-self: flex-end;
+
+
+    border-radius: 10%;
+    margin: 10px;
+    padding: 10px;
+}
+.container-chat-message-form{
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+
+    border-top: 2px groove rgba(28,110,164,0.35);
+
+    padding: 10px;
+
+}
+.container-chat-message-form>input{
+    width: 70%;
+}
+#username{
+    width: 20%;
+}
+.container-chat-message-form>button{
+    width:10%
+}
